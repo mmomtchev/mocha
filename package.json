@@ -43,6 +43,7 @@
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
+    "prepare": "npm run build",
     "build": "rollup -c ./rollup.config.js",
     "clean": "rimraf mocha.js mocha.js.map",
     "docs-clean": "rimraf docs/_site docs/api",
